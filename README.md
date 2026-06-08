@@ -1,12 +1,11 @@
 # Vision-RAG for Amazon 2023 — Project README
-
-This is a consolidated “GitHub-style” README of your project as we’ve built it together. It documents **data sources, scripts, outputs, paths, configs, and evaluation**. Everything below reflects the exact files/locations you’ve used.
+.
 
 ---
 
 ## TL;DR
 
-- **Goal:** Predict/complete product metadata (e.g., `brand`, later `finish/coverage/size`) using **Vision-RAG** and compare against simple baselines (text heuristics, CLIP zero-shot, supervised baselines later).
+- **Goal:** Predict/complete product metadata (e.g., `brand`, later `finish/coverage/size`) using **Clip** and compare against simple baseline ().
 - **Datasets:** Amazon Reviews 2023 (category: **All_Beauty**) — reviews & meta.
 - **Key outputs:**
   - Catalog: `/home/p_esla/rec_proj/amazon_out/items_meta.parquet`
