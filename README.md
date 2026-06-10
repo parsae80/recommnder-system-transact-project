@@ -68,14 +68,6 @@ The CLIP generator writes the artifacts consumed by the stage-1 LightGCN script:
 
 The exact output paths depend on whether you use `clip_feature_gen.py` or `clip_feature_gen_paths.py`.
 
-## TransAct / Stage-2 Input
-
-`tomp.py` and `tomp_baseline_30m.py` load the item embedding checkpoint produced by the LightGCN stage.
-
-- `tomp.py` is the CLIP-enabled variant.
-- `tomp_baseline_30m.py` is the baseline variant.
-
-The difference is mostly which pretrained item embedding checkpoint they load.
 
 ## Environment
 
@@ -114,8 +106,8 @@ python prep_items_meta.py
 python prep_reviews_revised.py
 python media_downloader.py
 python clip_feature_gen.py
-python Untitled-1.py
-python tomp.py
+python lgcn file
+python transact file 
 ```
 
 ## Notes
