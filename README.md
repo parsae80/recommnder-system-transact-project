@@ -106,8 +106,8 @@ python prep_items_meta.py
 python prep_reviews_revised.py
 python media_downloader.py
 python clip_feature_gen.py
-python lgcn file
-python transact file 
+python lgcn_model.py
+python transact-model.py 
 ```
 
 ## Notes
