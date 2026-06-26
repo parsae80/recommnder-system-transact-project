@@ -541,12 +541,7 @@ def build_review_tuples(frame: pd.DataFrame,
     Emits tuples:
     (seq_items, seq_times_ms, seq_action_types, req_time_ms, cand_i, y)
 
-     Action coding per step (based on historical event at that step):
-      0 = Dislike (rating < 4)
-      1 = Like, unverified (rating >= 4 & verified_purchase == 0)
-      2 = Like, verified   (rating >= 4 & verified_purchase == 1)
-
-    Target y remains your CTR-like label: 1 if rating >= 4 else 0 for the *current* item.
+    Target y remains your CTR-like label: 1 if verified_purchase else 0 for the *current* item.
     
     Adds hard negatives for positive targets:
     - Popular negatives: sample from 'popular_pool' (global top-K) not in user's history
